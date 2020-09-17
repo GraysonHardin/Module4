@@ -1,3 +1,13 @@
+"""
+Program: compound_expressions.py
+Author: Grayson Hardin
+Last date modified: 9/16/2020
+
+Basic if-elif examples. Depending on what the variables are it will return which one is higher and lower.
+
+"""
+
+
 def range_of_variable():
     MAX = 10
     MIN = 0
@@ -7,14 +17,14 @@ def range_of_variable():
     if Y > MAX:
         print(Y, 'is greater than', MAX)
 
-    elif Y < MIN:
+    if Y < MIN:
         print(Y, 'is less than', MIN)
 
-    if MIN < X < MAX:  # cannot is an "elif" otherwise it will not print.
+    if MIN < X < MAX:
         print(X, 'is greater than', MIN, 'and less than', MAX)
 
     if MIN <= X < MAX:
-        print(X, 'is greater than or equal to', MIN, 'and', X, 'is less than', MAX)
+        print(MIN, 'is less than or equal to', X, 'and', X, 'is less than', MAX)
 
     if MIN < X <= MAX:
         print(X, 'is greater than', MIN, 'and', X, 'is less than or equal to', MAX)
