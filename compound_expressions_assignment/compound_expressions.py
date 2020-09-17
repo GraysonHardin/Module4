@@ -1,7 +1,7 @@
 """
 Program: compound_expressions.py
 Author: Grayson Hardin
-Last date modified: 9/16/2020
+Last date modified: 9/17/2020
 
 Basic if-elif examples. Depending on what the variables are it will return which one is higher and lower.
 
