@@ -11,6 +11,11 @@ class MyTestCase(unittest.TestCase):
         with self.assertRaises(ValueError):
             average(90, -85, 95)
 
+    def test_average_third_number_negative(self):
+        with self.assertRaises(ValueError):
+            average(90, 85, -95)
+
+
 if __name__ == '__main__':
     unittest.main()
 
