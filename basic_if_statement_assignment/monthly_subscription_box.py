@@ -1,15 +1,14 @@
 """
 Program: monthly_subscription.py
 Author: Grayson Hardin
-Last date modified: 9/17/2020
+Last date modified: 9/21/2020
 
-This program allows the user to select a membership type. Upon selecting, it will return the version they selected, the cost, and the benefits of the version.
-As a bonus, I added an Else-Statement to handle incorrect inputs and it will force the user to enter a valid input.
-
+This program allows the user to select a membership type. Upon selecting, it will return the version they selected and the cost.
 """
 
 
 def membership(user_input):
+    # The user_input parameter is being used to gain input and the following statement on line 12 evaluates whether the input is equal to Platinum.
     if user_input == 'Platinum':
         return f'You have selected the Platinum which costs $60'
 
@@ -30,8 +29,9 @@ def membership(user_input):
 
 
 def main():
+    # Here the user input is stored.
     print("Please choose your monthly Programmer's Toolkit Subscription Service: Platinum, Gold, Silver, Bronze, and Free Trial. ")
-    user_input = str(input("Enter serivce choice here: "))
+    user_input = str(input("Enter service choice here: "))
     print(membership(user_input))
 
 

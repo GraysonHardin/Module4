@@ -6,7 +6,9 @@ from basic_if_statement_assignment.monthly_subscription_box import main
 @patch('builtins.input')
 @patch('builtins.print')
 class MyTestCase(unittest.TestCase):
+    # Due to some unclear measures of this assignment, I decided to implement some mock testing to ensure my bases were covered. We're using the builtin functions to help with this test.
     def test_membership_platinum(self, mock_print, mock_input):
+        # Similar to previous examples where I have a user_input = x and a expected = y, here we are using mock.input to do similar.
         mock_input.return_value = 'Platinum'
 
         main()
