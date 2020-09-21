@@ -1,11 +1,11 @@
 """
 Program: coupon_calculation.py
 Author: Grayson Hardin
-Last date modified: 9/18/2020
+Last date modified: 9/21/2020
 
 This program emulates a shopping cart. Upon checking out, the user is given the two discounts: cash and percent discounts.
 During the testing, I added additional tests to cover the price changes (i.e: an item that costs $29 has a shipping costs of $5.95 whereas an item that is $30 has a shipping of $7.95).
-In addition to the extra testing, I added extra scenarios for the different cash and percent discounts to account for the various situations.
+In addition to the extra testing, I added extra scenarios for the different cash and percent discounts to account for the various situations (i.e: $0 cash but .10 percent discount, etc).
 
 """
 

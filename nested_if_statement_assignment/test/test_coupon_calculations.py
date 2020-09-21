@@ -52,7 +52,6 @@ class CouponTesting(unittest.TestCase):
         actual = calculate_order(price, cash_coupon, percent_coupon)
         self.assertEqual(5.1, actual)
 
-
     # Test Set 2
 
     def test_price_ten_to_less_thirty_with_five_coupon_with_ten_discount(self):
@@ -102,7 +101,6 @@ class CouponTesting(unittest.TestCase):
 
         actual = calculate_order(price, cash_coupon, percent_coupon)
         self.assertEqual(24.06, actual)
-
 
     # Test set 3
     def test_price_thirty_to_fifty_with_five_cash_coupon_with_ten_percent_discount(self):
@@ -259,7 +257,6 @@ class CouponTesting(unittest.TestCase):
         actual = calculate_order(price, cash_coupon, percent_discount)
         self.assertEqual(18.44, actual)
 
-
     def test_price_when_thirty_with_no_coupon(self):
         price = 30
         cash_coupon = None
@@ -307,7 +304,6 @@ class CouponTesting(unittest.TestCase):
 
         actual = calculate_order(price, cash_coupon, percent_discount)
         self.assertEqual(47.7, actual)
-
 
 
 if __name__ == '__main__':
